@@ -47,7 +47,7 @@ def query_cleanup(query):
 def main():
     # get API key from top-right dropdown on OpenAI website
     # openai.api_key = os.getenv("OPENAI_API_KEY") or "OPENAI_API_KEY"
-    openai.api_key = "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"
+    openai.api_key = ""
 
     openai.Engine.list()  # check we have authenticated
 
@@ -63,7 +63,7 @@ def main():
     data = load_dataset('Amod/mental_health_counseling_conversations', split='train')
 
     # initialize connection to pinecone (get API key at app.pinecone.io)
-    api_key = "a1b4330b-7677-43e5-be21-781fa43c2b62"
+    api_key = ""
     # find your environment next to the api key in pinecone console
     env = "asia-northeast1-gcp"
 
